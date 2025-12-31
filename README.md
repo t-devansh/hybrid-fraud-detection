@@ -1,18 +1,18 @@
 # Hybrid Financial Fraud Detection System
 
+## Dashboard Preview
+![Fraud Monitoring Dashboard](assets/dashboard.png)
+
+## Try it out!
+🚀 **Interactive Web App:**  
+https://YOUR-APP-NAME.streamlit.app
+
 A hybrid machine learning system for fraud risk scoring that combines:
 - Unsupervised anomaly detection (Isolation Forest)
 - Supervised classification (XGBoost)
 - Threshold-tuned decision logic
 - SHAP-based explainability
 - Interactive Streamlit dashboard
-
-## Try it out!
-🚀 **Interactive Web App:**  
-https://YOUR-APP-NAME.streamlit.app
-
-## Dashboard Preview
-![Fraud Monitoring Dashboard](assets/dashboard.png)
 
 ## Features
 - Handles severe class imbalance (1% fraud)
