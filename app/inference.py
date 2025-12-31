@@ -3,15 +3,21 @@ import pandas as pd
 import joblib
 import streamlit as st
 import os
+import sys
 import subprocess
 
 
 @st.cache_resource
 def load_engine():
-    if not os.path.exists("artifacts/fraud_model_bundle.joblib"):
-        subprocess.run(["python", "model/train.py"], check=True)
+    model_path = "artifacts/fraud_model_bundle.joblib"
 
-    return joblib.load("artifacts/fraud_model_bundle.joblib")
+    if not os.path.exists(model_path):
+        subprocess.run(
+            [sys.executable, "model/train.py"],
+            check=True
+        )
+
+    return joblib.load(model_path)
 
 def score_transaction(amount, time_of_day, distance, merchant_type):
     bundle = load_engine()
