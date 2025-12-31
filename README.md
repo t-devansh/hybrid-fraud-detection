@@ -5,7 +5,7 @@
 
 ## Try it out!
 🚀 **Interactive Web App:**  
-https://YOUR-APP-NAME.streamlit.app
+https://hybrid-fraud-detection.streamlit.app/
 
 A hybrid machine learning system for fraud risk scoring that combines:
 - Unsupervised anomaly detection (Isolation Forest)
