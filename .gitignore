@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Model artifacts
+artifacts/*.joblib
+
+# OS / Editor
+.DS_Store
+.vscode/
