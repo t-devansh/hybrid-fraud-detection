@@ -6,6 +6,7 @@ from data_generator import generate_synthetic_data
 from features import encode_features
 from anomaly_model import train_anomaly_model
 from fraud_model import train_fraud_model
+import os
 
 def generate_and_train():
     print("Step 1: Generating Synthetic Banking Data...")
@@ -56,7 +57,7 @@ def generate_and_train():
     'decision_threshold': best_threshold
     }
 
-
+    os.makedirs("artifacts", exist_ok=True)
     joblib.dump(artifacts, 'artifacts/fraud_model_bundle.joblib')
     print("Success! Artifacts saved.")
 
